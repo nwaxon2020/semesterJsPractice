@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="user" description="user log in">
+    <meta property="og:title" content="User Log in">
+    <meta property="og:description" content="Join Our link Now">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:site-name" content="Dream Cars">
+
+    <title>User Log in</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/larger.css">
+
+    <!-- Fave Icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="pw">
+
+        <form method="get" action="../index.html">
+
+            <h2 class="feedbk">Congratulations Your Registration was successful!!</h2>
+            <fieldset>
+                <legend>User Log in</legend>
+                <label>Username: <input type="email" name="username" id="username" placeholder="@email"
+                        required></label>
+                <label id="hide-pw">Password: <input type="password" name="password" id="visible"
+                        pattern="^(?=.*\d)[\w@#%$]{8,}" required
+                        title="min of 8 characters with number (example Abc123@)/#abc123">
+                    <i id="hidepw" class="fa fa-eye"></i></label>
+                <!-- class="fa fa-eye-slash" == Hide password -->
+                <div>
+                    <button id="signup">Sign Up</button>
+                    <button type="submit" id="submit">Log in</button>
+                </div>
+            </fieldset>
+
+            <div id="policy">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in quas quisquam sequi
+                    error sint
+                    sed, deserunt placeat obcaecati odit, magni temporibus tempora esse, dicta eaque voluptate accusamus
+                    consequatur laborum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, id? Quidem
+                    repudiandae voluptatum ad at, molestiae quas sequi vel repellendus? Repudiandae inventore nisi
+                    corporis
+                    <a class="signup" href="#">Sign Up</a>
+                </p>
+
+            </div>
+        </form>
+
+    </div>
+    <div id="rg">
+        <form method="get" action="form.html">
+
+            <fieldset>
+                <legend>User Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Email* <input type="email" name="email" id="email" required
+                        placeholder="someone@email.com"></label>
+                <label>Phone <input type="tel" name="Phone" title="country code required" value="+234"></label>
+                <label>Create Password* <input type="password" name="password1" id="password1" required
+                        pattern="^(?=.*\d)[\w@#%$]{8,}"></label>
+                <label>Comfirm Password* <input type="password" name="password2" id="password2" required
+                        pattern="^(?=.*\d)[\w@#%$]{8,}"></label>
+                <p class="notmatch">password dose not match</p>
+                <div>
+                    <span>I Am 18yrs And Above*</span>
+                    <input type="radio" name="old" value="Yes" required>Yes
+                    <input type="radio" name="old" value="No" required>No
+                </div>
+
+                <input type="submit" value="Register" id="reg">
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+
+    <script src="script/password.js"></script>
+</body>
+
+</html>

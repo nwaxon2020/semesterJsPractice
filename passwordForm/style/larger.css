@@ -1,0 +1,120 @@
+@media (min-width: 600px) {
+
+    #pw {
+        margin-top: 8%;
+    }
+
+    #pw form,
+    #pw fieldset {
+        padding: 10px;
+    }
+
+    #pw legend {
+        font-size: 1.8rem;
+        font-stretch: expanded;
+    }
+
+    #pw label {
+        font-size: 1.1rem;
+    }
+
+    #pw input {
+        display: inline-block;
+        margin: 5px;
+        margin-right: 0px;
+        padding: 0.75rem;
+        width: 20rem;
+        font-size: 1rem;
+        border-bottom: 1.5px solid #fff;
+
+    }
+
+
+    #pw fieldset div #signup,
+    #submit {
+        padding: 0.5rem 2rem;
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    #pw fieldset div {
+        margin-left: 4rem;
+        width: 90%;
+    }
+
+    #pw input::placeholder {
+        font-size: 0.8rem;
+    }
+
+    #policy p {
+        font-size: 0.8rem;
+    }
+
+    /* Hide password */
+    #hidepw {
+        font-size: 18px;
+        position: absolute;
+        bottom: 20px;
+        margin-left: 8px;
+    }
+
+    /* form user information */
+    #rg {
+        max-width: 35rem;
+        padding: 10px;
+    }
+
+    #rg legend {
+        font-size: 1.2rem;
+    }
+
+    #rg label {
+        font-size: 0.85rem;
+    }
+
+    #rg input {
+        margin-top: 3px;
+        padding: 0.65rem;
+        width: 100%;
+        max-width: 20rem;
+        border-radius: 5px;
+        border: 1px solid #777;
+        background-color: rgba(0, 0, 0, 0.05);
+        font-size: 0.9rem;
+    }
+
+    /* rg form */
+    #rg div {
+        font-size: 1rem;
+    }
+
+    #rg div input {
+        width: 20px;
+    }
+
+    #rg div span {
+        margin-right: 2rem;
+    }
+
+    #rg #reg {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+
+
+
+    /* Feedback alert */
+    .feedbk {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #feedbck {
+        font-size: 1.5rem;
+    }
+
+    #feedbck #cont {
+        padding: 0.85rem 3rem;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,258 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url(../image/pwbackground.webp);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: aqua;
+    background-size: cover;
+}
+
+#pw {
+    margin-top: 10%;
+    display: block;
+}
+
+#pw form {
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+#pw fieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+#pw fieldset div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    margin-left: 5%;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+#pw legend {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+#pw label,
+#pw input {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#pw input {
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 1rem;
+    padding: 0.7rem;
+    width: 65%;
+    border: 0px;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+#pw input::placeholder {
+    color: #fff;
+    font-weight: 100;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 0px;
+}
+
+#pw input:required:valid {
+    border-left: 5px solid green;
+}
+
+
+#pw fieldset div #signup,
+#submit {
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    border: none;
+    font-weight: bold;
+
+    transition: transform ease-in-out 0.3s;
+}
+
+fieldset div #signup:hover,
+fieldset div #submit:hover {
+    opacity: 0.75;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+#hidepw:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#pw #policy {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 55rem;
+}
+
+#policy p {
+    color: #fff;
+    text-align: justify;
+}
+
+#policy p a {
+    font-weight: bolder;
+    font-style: 1rem;
+    color: goldenrod;
+}
+
+#policy p a:hover {
+    color: gold;
+    transition: ease-in-out;
+    cursor: pointer;
+}
+
+/* hide password */
+#hide-pw {
+    position: relative;
+}
+
+#hidepw {
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    margin-left: -8px;
+}
+
+/* ==========================Register Form CSS====================== */
+#rg {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 5px;
+}
+
+#rg form {
+    margin-top: 5%;
+}
+
+#rg fieldset {
+    border-radius: 10px;
+    margin: 0px auto;
+    padding-right: 5rem;
+    padding: 10px;
+    text-align: left;
+
+}
+
+#rg legend {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#rg label,
+#rg input {
+    display: block;
+    padding-top: 2rem;
+}
+
+#rg label {
+    font-weight: bolder;
+    color: #777;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+#rg input {
+    margin-top: 5px;
+    padding: 0.65rem;
+    width: 90%;
+    max-width: 25rem;
+    border-radius: 5px;
+    border: 1px solid #777;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 0.9rem;
+}
+
+#rg input:required {
+    border-left: 5px solid red;
+}
+
+#rg input:required:valid {
+    border-left: 5px solid green;
+}
+
+#rg div {
+    display: flex;
+    padding: 2rem 1rem;
+
+}
+
+#rg div {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#rg div span {
+    margin-right: 1rem;
+    color: #555;
+}
+
+#rg div input {
+    margin: 5px;
+    margin-left: 1.2rem;
+    width: 15px;
+    max-width: 25rem;
+}
+
+#rg #reg {
+    margin: 0 auto;
+    width: 2rem 10rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    background-color: green;
+    opacity: 0.9;
+}
+
+#rg #reg:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.notmatch {
+    display: none;
+    margin-top: 0px;
+    padding-left: 1rem;
+    color: red;
+    font-weight: bold;
+    max-width: 20rem;
+}
+
+/*============ Feedback aler ================ */
+.feedbk {
+    display: none;
+    margin: 0 auto;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #fff;
+    width: 90%;
+    max-width: 50rem;
+    color: #333;
+}

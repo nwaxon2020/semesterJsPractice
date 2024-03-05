@@ -1,0 +1,350 @@
+:root {
+    --spec-font-color: goldenrod;
+    --hover-colour: gold;
+}
+
+
+
+body {
+    font-family: "Madimi One", sans-serif;
+    margin-top: 0px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    position: relative;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1.5rem;
+    border-bottom: 1px solid var(--spec-font-color);
+}
+
+
+#home i {
+    font-size: 24px;
+    color: var(--spec-font-color);
+
+}
+
+#home div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#home div a {
+    font-size: 0.9rem;
+    color: var(--spec-font-color);
+}
+
+nav {
+    display: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 2rem;
+    background-color: #333;
+    position: absolute;
+    z-index: 2;
+    border-bottom-right-radius: 10px;
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    padding-left: 0px;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 0px;
+}
+
+ul li {
+    margin: 10px 1rem;
+    font-size: 0.85rem;
+    font-weight: bolder;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--spec-font-color);
+}
+
+nav #menu {
+    display: none;
+    position: absolute;
+    top: -15px;
+    left: 125%;
+    transform: translateX(-50%);
+    background-color: rgb(35, 54, 54);
+    margin-top: 20px;
+    cursor: pointer;
+    margin: 1rem;
+    z-index: 1;
+}
+
+nav .menu::after {
+    content: ">";
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--spec-font-color);
+}
+
+nav li:hover #menu {
+    display: block;
+}
+
+nav #menu li {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #fff;
+    list-style: disc;
+}
+
+nav ul li:nth-child(6) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+li a:hover {
+    color: #fff;
+    transition: ease-in-out;
+}
+
+#signup-img {
+    display: none;
+    border-radius: 100%;
+    margin: 0px;
+    border: 2px solid var(--spec-font-color);
+}
+
+#menu li:hover {
+    opacity: 0.8;
+}
+
+#car-section {
+    background-image: url(../passwordForm/image/pwbackground.webp);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgb(1, 32, 32);
+    background-size: cover;
+    padding-top: 20px;
+}
+
+#ads {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 46rem;
+    padding: 0px;
+    border: 2px solid #f1f1f1;
+    border-radius: 3rem;
+    background-color: #fff;
+    box-shadow: inset 5px 5px 15px 5px;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+}
+
+#ads p {
+    margin: 0px;
+    padding: 1px;
+    text-align: center;
+    animation: advert 15s ease-in-out infinite;
+    text-wrap: nowrap;
+}
+
+@keyframes advert {
+    from {
+        transform: translateX(695px);
+    }
+
+    to {
+        transform: translateX(-695px);
+    }
+}
+
+#cartype {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+#cartype .car1 {
+    border: 2.5px solid var(--spec-font-color);
+    border-top: 0px;
+    width: 70%;
+    height: 35%;
+    border-radius: 0px;
+    padding: 0px;
+    margin-right: 5px;
+}
+
+#cartype img {
+    width: 35%;
+    height: 20%;
+    border-radius: 2rem;
+    margin-left: 5px;
+    border: 0.8px solid #999;
+}
+
+#cartype img:nth-child(2) {
+    margin-left: -9%;
+    border: 1px solid var(--hover-colour);
+
+}
+
+#cartype .car1:hover {
+    transform: scale(1.009);
+    transition: 1s ease-in-out 0.2s;
+}
+
+#btns {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0.5rem;
+    padding: 0 1rem;
+    max-width: 48rem;
+}
+
+#rightbtn,
+#leftbtn {
+    padding: 0rem 2rem;
+    background-color: var(--spec-font-color);
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    transition: transform ease-in-out 0.3s;
+}
+
+#rightbtn i,
+#leftbtn i {
+    font-size: 24px;
+}
+
+#rightbtn:hover,
+#leftbtn:hover {
+    background-color: var(--hover-colour);
+    transform: translateY(-3px);
+}
+
+#sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+}
+
+#sec2 p {
+    padding: 0.2rem;
+    text-align: justify;
+    text-wrap: wrap;
+    width: 95%;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    border-top: 1px solid #999;
+}
+
+#sec2 p span {
+    font-size: 1rem;
+}
+
+#sec2 span {
+    color: var(--spec-font-color);
+    font-family: "Madimi One";
+}
+
+#spec {
+    width: 75%;
+}
+
+#spec h2 {
+    text-align: center;
+    color: var(--spec-font-color);
+    text-decoration: underline;
+    margin-bottom: 0px;
+    font-size: 1rem;
+}
+
+#carinfo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: #fff;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+#carinfo h4 {
+    padding: 15px;
+    margin-bottom: 0px;
+    font-size: 0.75rem;
+}
+
+#weather section {
+    padding: 5px;
+}
+
+#weather h2 {
+    margin: 20px 5px 5px 20px;
+}
+
+.map {
+    width: 100%;
+    max-height: 20rem;
+}
+
+footer {
+    border-top: 2px solid #333;
+    padding: 0.5rem;
+}
+
+
+footer p {
+    text-align: center;
+}
+
+footer div {
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+}
+
+footer #links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #links i {
+    padding-right: 1rem;
+}
+
+#links h3 {
+    margin-right: 10px;
+}
+
+footer span {
+    color: blue;
+}
+
+footer a {
+    color: blue;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
