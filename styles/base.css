@@ -121,11 +121,16 @@ li a:hover {
     transition: ease-in-out;
 }
 
-#signup-img {
+#signup-img,
+#home img {
     display: none;
     border-radius: 100%;
     margin: 0px;
     border: 2px solid var(--spec-font-color);
+}
+
+#home img {
+    display: block;
 }
 
 #menu li:hover {
