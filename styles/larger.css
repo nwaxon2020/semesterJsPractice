@@ -53,6 +53,10 @@
         content: "";
     }
 
+    #weather hr {
+        display: none;
+    }
+
     nav #menu li {
         padding: 0.7rem;
         color: #fff;

@@ -308,8 +308,13 @@ li a:hover {
 }
 
 .map {
+    margin-top: 0px;
     width: 100%;
     max-height: 20rem;
+}
+
+.weth {
+    margin-top: 0px;
 }
 
 footer {
