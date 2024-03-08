@@ -1,4 +1,4 @@
-@media (min-width:600px) {
+@media (min-width:650px) {
     nav {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -67,34 +67,6 @@
         display: block;
     }
 
-    #ads {
-        margin-left: 2rem;
-    }
-
-    #cartype .car1 {
-        max-width: 50rem;
-        height: 30rem;
-    }
-
-    #cartype img {
-        max-width: 25rem;
-        height: 15rem;
-        border: 1px solid #999;
-        margin-right: 1.5rem;
-    }
-
-    #cartype .car1:hover {
-        transform: scale(1.02);
-        transition: 1s ease-in-out 0.2s;
-    }
-
-
-    #cartype img:nth-child(2) {
-        margin-left: -5%;
-        border: 1.8px solid var(--hover-colour);
-
-    }
-
     #rightbtn,
     #leftbtn {
         padding: 0rem 4.5rem;
@@ -118,13 +90,17 @@
         justify-items: center;
     }
 
+    #sec2 #p {
+        border-top: none;
+    }
+
     #sec2 p {
         grid-column: 0/1;
         grid-row: 0/2;
         padding: 0.8rem;
-        max-width: 48rem;
         font-size: 1rem;
         border-top: 0px;
+        justify-self: right;
     }
 
     #sec2 p span {
@@ -136,7 +112,8 @@
         grid-row: 1/1;
         border-left: 1px solid #999;
         justify-self: right;
-        padding: 0px 3rem;
+        padding: 0px 1rem;
+        width: 90%;
     }
 
     #spec h2 {
@@ -152,11 +129,6 @@
         justify-content: space-around;
     }
 
-    #weather section:nth-child(2) h2 {
-        text-align: right;
-        padding: 10px;
-    }
-
     #weather section {
         width: 98%;
         padding: 10px;
@@ -165,7 +137,21 @@
 
     .map {
         width: 100%;
-        max-height: 20rem;
+        max-height: 35rem;
+    }
+
+    .weth p {
+        margin: 10px 0px;
+        font-size: 1.5rem;
+    }
+
+    .weth {
+        font-size: 2rem;
+    }
+
+    .weth .emoji {
+        margin-top: 0px 5px;
+        font-size: 5rem;
     }
 
     footer div {

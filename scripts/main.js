@@ -38,3 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+////////////////// Slide Show /////////////
+const leftbtn = document.getElementById("leftbtn");
+const rightbtn = document.getElementById("rightbtn");
+const carImages = document.querySelectorAll(".carz");
+const displayImage = document.getElementById("display-image");
+
+
